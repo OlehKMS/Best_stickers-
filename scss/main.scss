@@ -1,0 +1,16 @@
+@import './reset';
+@import './@mixin';
+@import 'home_page';
+
+$back-color: #C5C5C5;
+$color-style: rgba(229, 0, 104, 1);
+
+body {
+   background: $back-color;
+
+
+}
+
+// .name {
+//    @include Center;
+//       }

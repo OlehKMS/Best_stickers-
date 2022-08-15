@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  background: #F4F4F4;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 6px rgba(0, 0, 0, 0.15);
+}
+header .profile_bucklet_icon a {
+  padding: 0 5px;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+
+.menu__btn {
+  position: fixed;
+  top: 35px;
+  left: 40px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(60, 60, 60);
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 80px;
+  right: 50%;
+  left: 35px;
+  width: 150px;
+  height: 235px;
+  padding: 20px 0;
+  list-style: none;
+  background-color: rgb(241, 226, 226);
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-duration: 0.25s;
+  border-top: 3px solid;
+  border-color: rgb(229, 0, 104);
+}
+
+.hamburger_list {
+  left: -100%;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: rgb(85, 85, 85);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  font-weight: 500;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 55%;
+}
+.menu li {
+  padding: 0 2.6%;
+}
+.menu .menu__main {
+  color: rgb(60, 60, 60);
+}
+.menu .menu__main::after {
+  margin-left: 5px;
+  content: url(/img/arrow_down.png);
+}
+
+#block {
+  width: 500px;
+  height: 500px;
+  background-color: rebeccapurple;
+  margin: 0 auto;
+}
+
+body {
+  background: #C5C5C5;
+}/*# sourceMappingURL=main.css.map */
