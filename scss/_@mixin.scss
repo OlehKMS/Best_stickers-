@@ -7,5 +7,16 @@
 @mixin Fs_Ff_Fw_color {
    color: rgba(85, 85, 85, 1);
    font-family: 'Montserrat', sans-serif;
-   font-weight: 600;
+   font-weight: 500;
+   font-size: 1.20vw;
+   
+   text-align: left;
 }
+@mixin onclick_interectiv_menu{
+   position: absolute;
+  background: #F4F4F4;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
+}
+// .name {
+//    @include Center;
+//       }

@@ -83,29 +83,28 @@ header .profile_bucklet_icon a {
   height: 235px;
   padding: 20px 0;
   list-style: none;
-  background-color: rgb(241, 226, 226);
+  background: rgb(244, 244, 244);
   box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
-  transition-duration: 0.25s;
   border-top: 3px solid;
   border-color: rgb(229, 0, 104);
 }
 
 .hamburger_list {
   left: -100%;
+  transition-duration: 0.25s;
 }
 
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: rgb(85, 85, 85);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
   text-decoration: none;
   transition-duration: 0.25s;
+  color: rgb(85, 85, 85);
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  font-size: 1.2vw;
+  text-align: left;
 }
-
 .menu__item:hover {
   background-color: #CFD8DC;
 }
@@ -118,14 +117,52 @@ header .profile_bucklet_icon a {
   width: 55%;
 }
 .menu li {
-  padding: 0 2.6%;
+  padding: 0 2vw;
 }
 .menu .menu__main {
+  color: rgb(85, 85, 85);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  text-align: left;
   color: rgb(60, 60, 60);
 }
 .menu .menu__main::after {
   margin-left: 5px;
   content: url(/img/arrow_down.png);
+}
+
+.interectiv_menu_sets {
+  position: absolute;
+  background: #F4F4F4;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
+}
+.interectiv_menu_sets .menu_sets {
+  position: fixed;
+  top: 80px;
+  text-align: left;
+  background: rgb(244, 244, 244);
+  border-top: 3px solid;
+  border-color: rgb(229, 0, 104);
+}
+.interectiv_menu_sets .menu_sets li {
+  padding: 1vw 0;
+}
+.interectiv_menu_sets .menu_sets li:hover {
+  background-color: #CFD8DC;
+}
+.interectiv_menu_sets .menu_sets .menu__set {
+  color: rgb(85, 85, 85);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  text-align: left;
+  padding: 1vw;
+  white-space: pre-wrap;
+}
+
+.onclick_sets {
+  left: 300px;
 }
 
 #block {

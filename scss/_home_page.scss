@@ -5,7 +5,7 @@ header {
   @include Center;
   box-shadow: 0px 6px rgba(0, 0, 0, 0.15);
 
-  // padding: 0 6%;
+  
   .profile_bucklet_icon {
     & a {
       padding: 0 5px;
@@ -76,39 +76,39 @@ header {
   height: 235px;
   padding: 20px 0;
   list-style: none;
-  background-color: rgb(241, 226, 226);
+  background: rgba(244, 244, 244, 1);
   box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
-  transition-duration: .25s;
+  
   border-top: 3px solid;
   border-color: rgba(229, 0, 104, 1);
 }
-.hamburger_list{
+
+.hamburger_list {
   left: -100%;
+  transition-duration: .25s;
 }
 
 .menu__item {
   display: block;
   padding: 12px 24px;
-  @include Fs_Ff_Fw_color;
-  font-size: 16px;
   text-decoration: none;
   transition-duration: .25s;
-  font-weight: 500;
+  @include Fs_Ff_Fw_color;
+  &:hover{
+    background-color: #CFD8DC;
+  }
 }
 
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
+
 
 .menu {
+  li{
+    padding: 0 2vw;
+  }
   @include Center;
   width: 55%;
-
-  & li {
-    padding: 0 2.6%;
-  }
-
   .menu__main {
+    @include Fs_Ff_Fw_color;
     color: rgba(60, 60, 60, 1);
 
     &::after {
@@ -118,7 +118,37 @@ header {
   }
 }
 
-#block{
+.interectiv_menu_sets {
+  
+    @include onclick_interectiv_menu;
+
+  .menu_sets {
+    
+    li{
+      padding: 1vw 0 ;
+      &:hover{
+        background-color: #CFD8DC;
+      }
+    }
+    position: fixed;
+    top: 80px;
+    text-align: left;
+    background: rgba(244, 244, 244, 1);
+    border-top: 3px solid;
+    border-color: rgba(229, 0, 104, 1);
+    
+     .menu__set {
+      @include Fs_Ff_Fw_color;
+      padding: 1vw;
+      white-space: pre-wrap;
+    }
+  }
+}
+.onclick_sets{
+  left: 300px;
+}
+
+#block {
   width: 500px;
   height: 500px;
   background-color: rebeccapurple;
