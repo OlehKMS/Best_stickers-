@@ -14,10 +14,21 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 0px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.15);
+}
+header .profile_bucklet_icon {
+  margin-left: 2.2vw;
 }
 header .profile_bucklet_icon a {
   padding: 0 5px;
+}
+
+.hamburger-menu {
+  margin: 0 6vw 36px 0;
+}
+
+.logo {
+  margin-right: 6vw;
 }
 
 #menu__toggle {
@@ -43,10 +54,7 @@ header .profile_bucklet_icon a {
 }
 
 .menu__btn {
-  position: fixed;
-  top: 35px;
-  left: 40px;
-  width: 26px;
+  width: 100%;
   height: 26px;
   cursor: pointer;
   z-index: 1;
@@ -57,7 +65,7 @@ header .profile_bucklet_icon a {
 .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 26px;
   height: 2px;
   background-color: rgb(60, 60, 60);
   transition-duration: 0.25s;
@@ -78,10 +86,7 @@ header .profile_bucklet_icon a {
   position: fixed;
   top: 80px;
   right: 50%;
-  left: 35px;
-  width: 150px;
-  height: 235px;
-  padding: 20px 0;
+  width: 16vw;
   list-style: none;
   background: rgb(244, 244, 244);
   box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
@@ -96,7 +101,7 @@ header .profile_bucklet_icon a {
 
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 1vw;
   text-decoration: none;
   transition-duration: 0.25s;
   color: rgb(85, 85, 85);
@@ -132,12 +137,14 @@ header .profile_bucklet_icon a {
   content: url(/img/arrow_down.png);
 }
 
-.interectiv_menu_sets {
+.interectiv_menu {
+  display: none;
   position: absolute;
+  z-index: 5;
   background: #F4F4F4;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
 }
-.interectiv_menu_sets .menu_sets {
+.interectiv_menu ul {
   position: fixed;
   top: 80px;
   text-align: left;
@@ -145,13 +152,13 @@ header .profile_bucklet_icon a {
   border-top: 3px solid;
   border-color: rgb(229, 0, 104);
 }
-.interectiv_menu_sets .menu_sets li {
+.interectiv_menu ul li {
   padding: 1vw 0;
 }
-.interectiv_menu_sets .menu_sets li:hover {
+.interectiv_menu ul li:hover {
   background-color: #CFD8DC;
 }
-.interectiv_menu_sets .menu_sets .menu__set {
+.interectiv_menu ul a {
   color: rgb(85, 85, 85);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -162,16 +169,46 @@ header .profile_bucklet_icon a {
 }
 
 .onclick_sets {
-  left: 300px;
+  display: block;
+}
+
+.header_background {
+  position: absolute;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.6vw;
+  color: rgb(85, 85, 85);
+  top: 25%;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.header_background button {
+  width: 200px;
+  margin: 40px auto;
 }
 
 #block {
-  width: 500px;
-  height: 500px;
-  background-color: rebeccapurple;
-  margin: 0 auto;
+  height: 100vh;
+  background: url(/img/Home_page_img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 body {
   background: #C5C5C5;
+}
+
+button {
+  background-color: rgb(229, 0, 104);
+  padding: 15px 28px;
+  border-radius: 50px;
+  border-style: none;
+}
+button a {
+  color: white;
+  font-family: Comfortaa;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,13 +1,21 @@
 @import './reset';
 @import './@mixin';
 @import 'home_page';
+@import 'content.scss';
 
 $back-color: #C5C5C5;
 $color-style: rgba(229, 0, 104, 1);
 
-body {
-   background: $back-color;
 
 
+button {
+   background-color: $color-style;
+   padding: 15px 28px;
+   border-radius: 50px;
+   border-style: none;
+   a {
+      color: #FFFF;
+      font-family: Comfortaa;
+      font-size: 18px;
+   }
 }
-

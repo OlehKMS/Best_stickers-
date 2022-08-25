@@ -3,14 +3,24 @@ header {
   background: #F4F4F4;
   height: 80px;
   @include Center;
-  box-shadow: 0px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.15);
 
-  
+
   .profile_bucklet_icon {
+    margin-left: 2.2vw;
+
     & a {
       padding: 0 5px;
     }
   }
+}
+
+.hamburger-menu {
+  margin: 0 6vw 36px 0;  
+}
+
+.logo {
+  margin-right: 6vw;
 }
 
 #menu__toggle {
@@ -36,10 +46,7 @@ header {
 }
 
 .menu__btn {
-  position: fixed;
-  top: 35px;
-  left: 40px;
-  width: 26px;
+    width: 100%;
   height: 26px;
   cursor: pointer;
   z-index: 1;
@@ -50,7 +57,7 @@ header {
 .menu__btn>span::after {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 26px;
   height: 2px;
   background-color: rgba(60, 60, 60, 1);
   transition-duration: .25s;
@@ -71,42 +78,37 @@ header {
   position: fixed;
   top: 80px;
   right: 50%;
-  left: 35px;
-  width: 150px;
-  height: 235px;
-  padding: 20px 0;
+  width: 16vw;
   list-style: none;
   background: rgba(244, 244, 244, 1);
   box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
-  
   border-top: 3px solid;
   border-color: rgba(229, 0, 104, 1);
 }
-
 .hamburger_list {
   left: -100%;
   transition-duration: .25s;
-}
 
+}
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 1vw;
   text-decoration: none;
   transition-duration: .25s;
   @include Fs_Ff_Fw_color;
-  &:hover{
+
+  &:hover {
     background-color: #CFD8DC;
   }
 }
-
-
-
 .menu {
-  li{
+  li {
     padding: 0 2vw;
   }
+
   @include Center;
   width: 55%;
+
   .menu__main {
     @include Fs_Ff_Fw_color;
     color: rgba(60, 60, 60, 1);
@@ -118,39 +120,36 @@ header {
   }
 }
 
-.interectiv_menu_sets {
-  
-    @include onclick_interectiv_menu;
+.interectiv_menu {
 
-  .menu_sets {
-    
-    li{
-      padding: 1vw 0 ;
-      &:hover{
-        background-color: #CFD8DC;
-      }
-    }
-    position: fixed;
-    top: 80px;
-    text-align: left;
-    background: rgba(244, 244, 244, 1);
-    border-top: 3px solid;
-    border-color: rgba(229, 0, 104, 1);
-    
-     .menu__set {
-      @include Fs_Ff_Fw_color;
-      padding: 1vw;
-      white-space: pre-wrap;
-    }
-  }
+  @include onclick_interectiv_menu;
+
 }
-.onclick_sets{
-  left: 300px;
+.onclick_sets {
+  display: block;
+}
+.header_background {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.6vw;
+  color: rgba(85, 85, 85, 1);
+  top: 25%;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+  button{
+    width: 200px;
+    margin: 40px auto;
+  }
 }
 
 #block {
-  width: 500px;
-  height: 500px;
-  background-color: rebeccapurple;
-  margin: 0 auto;
+  height: 100vh;
+  background: url(/img/Home_page_img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
